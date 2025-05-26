@@ -1,1 +1,75 @@
+ @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
  
+ html{
+  background-color: darkgray;
+  font-family: "Quicksand", sans-serif;
+ }
+
+ h1 {
+  text-align: center;
+  text-transform: uppercase;
+ }
+ 
+ .container {
+  border: 3px solid;
+  border-radius: 10px;
+  height: 580px;
+  max-width: 400px;
+  margin: auto;
+  background-color: black;
+ }
+
+ .display {
+  display: flex;
+  justify-content: center;
+ }
+
+ textarea {
+  width: 100%;
+  height: 100px;
+  margin: 5px 5px 0 5px;
+  border-radius: 10px;
+  background-color: lightslategrey;
+  color: black;
+  font-size: 60px;
+ }
+
+ .btn-line-one,
+ .btn-line-two,
+ .btn-line-three,
+ .btn-line-four,
+ .btn-line-five
+  {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 8px 0;
+  /* border: 1px solid green; */
+ }
+
+ button {
+  height: 80px;
+  width: 90px;
+  border: none;
+  border-radius: 10px;
+  font-size: 30px;
+ font-family: "Quicksand", sans-serif;
+
+  font-weight: bold;
+ }
+
+ .zero {
+  width: 185px;
+ }
+
+ .operator {
+  background-color: aqua;
+ }
+
+ .number {
+  background-color: fuchsia;
+ }
+
+ .clear {
+  background-color: orange;
+ }
