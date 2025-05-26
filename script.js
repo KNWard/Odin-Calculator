@@ -1,3 +1,23 @@
+const buttons = document.querySelectorAll('.btn');
+const display = document.querySelector('textarea');
+const clearBtn = document.querySelector('.clear');
+let characters = [];
+
+buttons.forEach(btn => {
+ btn.addEventListener('click', () => {
+  display.value += btn.innerText
+  characters = display.value.split('')
+ })
+})
+
+clearBtn.addEventListener('click', () => {
+ characters.pop()
+ display.value = characters.join('')
+})
+
+
+
+
 // VARIABLES
 
 
