@@ -11,11 +11,8 @@ buttons.forEach(btn => {
 })
 
 clearBtn.addEventListener('click', () => {
- characters.pop()
- display.value = characters.join('')
+ display.value = "";
 })
-
-
 
 
 // VARIABLES
