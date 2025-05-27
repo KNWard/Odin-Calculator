@@ -83,6 +83,8 @@ function calc() {
   firstNum = num1 - num2;
  } else if (operator === "x") {
   firstNum = num1 * num2;
+ } else if (operator === "%") {
+  firstNum = num1 % num2;
  } else if (operator === "/") {
   firstNum = num2 !== 0 ? num1 / num2 : "Error";
  }
