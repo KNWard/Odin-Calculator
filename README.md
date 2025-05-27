@@ -4,6 +4,8 @@
 
 This project is the last in The Odin Project Foundations course. The assignment was to create a functioning calculator, performing addition, subtraction, division and multiplication operations. The calculator had to diplay the input numbers and operators. It would also incorporate functioning 'clear' and 'backspace' buttons.
 
+[Live Project View](https://knward.github.io/Odin-Calculator/)
+
 ### Built With
 
 - HTML
