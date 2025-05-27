@@ -8,6 +8,7 @@ let isSecondNum = false;
 document.addEventListener("DOMContentLoaded", () => {
  let numbers = document.querySelectorAll(".number");
  let operators = document.querySelectorAll(".operator");
+ let back = document.querySelector(".backspace");
  let clear = document.querySelector(".clear");
  let decimal = document.querySelector(".decimal");
  let equal = document.querySelector(".equal");
@@ -23,6 +24,17 @@ document.addEventListener("DOMContentLoaded", () => {
   display.textContent = firstNum + "" + operator;
  }))
 
+ back.addEventListener("click", () => {
+  if (!isSecondNum) {
+    firstNum = firstNum.slice(0, -1);
+    display.textContent = firstNum;
+  } else {
+    secondNum = secondNum.slice(0, -1);
+    display.textContent = secondNum;
+  }
+});
+
+
  clear.addEventListener("click", () => {
   firstNum = '';
   secondNum = '';
@@ -34,6 +46,10 @@ document.addEventListener("DOMContentLoaded", () => {
  equal.addEventListener("click", () => {
   calc();
   display.textContent = firstNum;
+ })
+
+ decimal.addEventListener("click", () => {
+  addDecimal();
  })
 })
 
@@ -77,6 +93,20 @@ function calc() {
  isSecondNum = false;
 
  console.log(firstNum);
+}
+
+function addDecimal() {
+  if (!isSecondNum) {
+    if (!firstNum.includes(".")) {
+      firstNum += firstNum === '' ? '0.' : '.';
+      display.textContent = firstNum;
+    }
+  } else {
+    if (!secondNum.includes(".")) {
+      secondNum += secondNum === '' ? '0.' : '.';
+      display.textContent = secondNum;
+    }
+  }
 }
 
 
